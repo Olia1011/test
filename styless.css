@@ -1,0 +1,422 @@
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/montserrat-v14-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Montserrat Regular'), local('Montserrat-Regular'),
+    url('../fonts/montserrat-v14-latin-regular.eot?#iefix')
+      format('embedded-opentype'),
+    /* IE6-IE8 */ url('./fonts/montserrat-v14-latin-regular.woff2')
+      format('woff2'),
+    /* Super Modern Browsers */ url('./fonts/montserrat-v14-latin-regular.woff')
+      format('woff'),
+    /* Modern Browsers */ url('../fonts/montserrat-v14-latin-regular.ttf')
+      format('truetype'),
+    /* Safari, Android, iOS */
+      url('../fonts/montserrat-v14-latin-regular.svg#Montserrat') format('svg'); /* Legacy iOS */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol';
+}
+
+.sections {
+  position: relative;
+  padding-top: 890px;
+}
+
+.slider-section_first {
+  padding-top: 48px;
+  margin-bottom: 136px;
+  position: absolute;
+  z-index: 2;
+  top: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 800px;
+}
+
+.slider-section_second {
+  padding-top: 48px;
+  margin-bottom: 136px;
+}
+
+.slider-section__title-wrap {
+  border-top: 1px solid rgb(153, 153, 153);
+  position: relative;
+  margin-bottom: 116px;
+}
+.slider-section__title {
+  color: #333333;
+  font-weight: 400;
+  font-family: 'Montserrat';
+  text-align: center;
+  position: absolute;
+  top: -24px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgb(255, 255, 255);
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  z-index: 0;
+}
+
+.carousel-block:hover {
+  border: 1px solid #f2f2f2;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  background-color: white;
+}
+
+.slider__content_header-icon {
+  width: 24px;
+  height: 19px;
+  text-align: right;
+  background-position: center;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  z-index: 3;
+}
+
+.slider__content_img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  height: 280px;
+  margin: 0 auto;
+  margin-bottom: 12px;
+  margin-top: 15px;
+}
+
+.slider__content_title {
+  width: 170px;
+  height: 50px;
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+  font-weight: 400;
+  font-family: 'Montserrat';
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 5px;
+}
+
+.slider_content_subtitle {
+  width: 170px;
+  height: 41px;
+  font-size: 14px;
+  color: #333333;
+  font-weight: 400;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* .btn_discount{
+  margin: 0 auto;
+  text-align: center;
+}
+
+.discount {
+  margin: 0 auto;
+  border: none;
+  outline: none;
+  width: 108px;
+  height: 25px;
+  background-image: url("./images/icons/Vector\ 2.png");
+  background-color: inherit;
+  background-repeat: no-repeat;
+} */
+
+.select {
+  border: none;
+  outline: none;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.box_color-list {
+  margin: 0 auto;
+  width: 220px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  margin-top: 25px;
+}
+
+.box_color-items {
+  margin: 0 auto;
+  width: 240px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  margin-top: 25px;
+}
+
+.box_list {
+  margin-right: 0;
+}
+
+.box_color-item {
+  width: 40px;
+  height: 40px;
+  border: none;
+  outline: none;
+  margin-bottom: 10px;
+}
+
+.box__color-item:not(:nth-child(5)) {
+  margin-right: 0;
+}
+
+.box__color-item:nth-child(-n + 5) {
+  margin-bottom: 10px;
+}
+
+.grey {
+  background-color: #c4c4c4;
+}
+
+.red {
+  background-color: #a83c3c;
+}
+
+.green {
+  background-color: #57a33d;
+}
+
+.yellow {
+  background-color: #feab4a;
+}
+
+.blue {
+  background-color: #5b8fdd;
+}
+
+.brown {
+  background-color: #4b0303;
+}
+
+.purple {
+  background-color: #ab42bc;
+}
+
+.sky {
+  background-color: #39bfd1;
+}
+
+.dark {
+  background-color: #2422a2;
+}
+
+.block {
+  display: none;
+}
+
+.carousel-block:hover .block {
+  display: block;
+}
+
+.discount {
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 24px;
+  color: black;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 18px;
+  margin-bottom: 10px;
+}
+
+.price {
+  margin-left: 16px;
+  color: rgb(196, 196, 196);
+}
+
+.box__btn-wrap {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.box__counter {
+  width: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.box__count {
+  color: black;
+  margin-right: 18px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.box__counter_down,
+.box__counter_up {
+  width: 15px;
+  height: 15px;
+  border: none;
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.box__counter_down {
+  margin-right: 18px;
+  background-image: url('./images/icons/down.png');
+}
+.box__counter_up {
+  background-image: url('./images/icons/up.png');
+}
+
+.box__basket {
+  width: 37px;
+  height: 30px;
+  border: none;
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url('./images/icons/buy.png');
+  margin-top: 12px;
+}
+
+.carousel-block:hover .box__basket {
+  background-image: url('./images/icons/buyHover.png');
+  border: none;
+  outline: none;
+}
+
+.rating-area {
+  padding-left: 100px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  width: 265px;
+  margin: 0 auto;
+}
+.rating-area:not(:checked) > input {
+  display: none;
+}
+.rating-area:not(:checked) > label {
+  float: left;
+  padding: 0;
+  cursor: pointer;
+  color: lightgrey;
+  text-shadow: 1px 1px #bbb;
+}
+.rating-area:not(:checked) > label:before {
+  content: url(./images/icons/adamantikRating.png);
+  width: 13px;
+  height: 13px;
+}
+.rating-area > input:checked ~ label {
+  content: url(./images/icons/adamantikRatingDark.png);
+}
+.rating-area:not(:checked) > label:hover,
+.rating-area:not(:checked) > label:hover ~ label {
+  content: url(./images/icons/adamantikRatingDark.png);
+}
+.rating-area > input:checked + label:hover,
+.rating-area > input:checked + label:hover ~ label,
+.rating-area > input:checked ~ label:hover,
+.rating-area > input:checked ~ label:hover ~ label,
+.rating-area > label:hover ~ input:checked ~ label {
+  color: gold;
+  text-shadow: 1px 1px goldenrod;
+}
+.rate-area > label:active {
+  position: relative;
+}
+
+/* .raiting_btn{
+                                      display: flex;
+                                      text-align: center;
+                                    
+                                      justify-content: center;
+                                    }
+                                  .raiting_btn li{
+                                  list-style: none;
+                                  margin-right: 2px;
+
+                                  }
+
+                                  .active {
+                                    background-image: url('./images/icons/adamantikRatingDark.png');
+                                    background-repeat: no-repeat;
+                                    width: 13px;
+                                    height: 13px;
+                                  } */
+
+.carousel {
+  max-width: 1310px; /* ширина всего блока */
+  margin: 50px auto;
+  width: 100%;
+}
+.carousel-wrapper {
+  margin: 10px 30px; /* отступы для стрелок */
+  overflow: hidden; /* скрываем содержимое, выходящее за рамки основной области */
+  position: relative;
+}
+.carousel-items {
+  width: 10000px; /* устанавливаем большую ширину для набора элементов */
+  position: relative; /* позиционируем блок относительно основной области карусели */
+}
+.carousel-block {
+  position: relative;
+  float: left; /* выстраиваем все элементы карусели в ряд */
+  width: 292px; /* задаём ширину каждого элемента */
+  padding: 10px 10px 10px 0px; /* делаем оступы, чтобы элементы не сливались */
+}
+.carousel-block img {
+  display: block;
+}
+
+/*********** BUTTONS ***********/
+.carousel-button-left a,
+.carousel-button-right a {
+  width: 45px;
+  height: 75px;
+  position: relative;
+  top: 200px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.carousel-button-left a {
+  float: left;
+  background-image: url('./images/icons/left.png');
+  background-repeat: no-repeat;
+}
+.carousel-button-right a {
+  float: right;
+  background: url('./images/icons/right.png');
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 768px) {
+  .carousel-block {
+    width: 310px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .carousel-block {
+    width: 292px;
+  }
+}
